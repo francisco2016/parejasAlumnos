@@ -73,15 +73,16 @@ public class Pareja
 
         String nombre = "";
         int index = 0;
+        int idPareja = 1;
         while(it.hasNext()){
             nombre = it.next();
             it.remove();
 
             if(index == 0){
                 System.out.println(" ");
-                System.out.println("Nombres de la pareja;");
+                System.out.println("Nombres de la pareja: " +idAlumno(idPareja));
+                idPareja ++;
             }
-
             System.out.println(nombre);
             index ++;
             if(index == 2 && copia.size() > 1){
